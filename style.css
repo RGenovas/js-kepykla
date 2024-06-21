@@ -1,0 +1,159 @@
+html, body {
+    margin:0;
+    padding:0;
+    background-color:#f1f1f1;
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight:400;
+}
+
+h1, h2, h3, h4, h4, h5, h6 {
+    font-weight:900;
+}
+
+h1 {
+    text-shadow:  #FC0 1px 0 1px;
+    font-style: italic;
+}
+
+.rezultato_rodymas{
+    display:flex;
+    justify-content: space-between;
+}
+
+.img1 {
+    width:20%;
+    height:20%;
+    display:inline;
+}
+
+.imgHide{
+    display:none;
+    
+}
+
+.imgShow{
+    display:block;
+}
+.logo-space {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+
+    height:30%;
+    width:30%;
+}
+
+
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 250px;
+    background-color: white;
+    color:black;
+    border:0.5px solid orange;
+    border-radius: 8px;
+    text-align: center;
+    
+    padding: 5px 0;
+  
+    /* Position the tooltip */
+    position: absolute;
+    bottom:2%;
+    right:101%
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
+button {
+    font-weight:600;
+    border-radius: 8px;
+    border:1px solid orange;
+    background-color: white;
+    
+}
+
+
+input {
+    border-radius:8px;
+    border-color: orange;
+}
+
+button:hover {
+  background-color: orange;
+      
+}
+
+input:hover {
+    background-color: aliceblue;
+}
+
+
+#profit-label {
+    font-weight:900;
+}
+
+
+.block-wrapper {
+    background-color: #fff;
+    width:100%;
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px 35px;
+    border-radius: 20px;
+    border:1px solid orange;
+    box-shadow: 0 0 40px rgba(0,0,0,0.02);
+}
+
+.info-wrapper .input-wrapper {
+    margin:10px 0;
+}
+
+.info-wrapper .input-wrapper > * {
+    display:block;
+}
+
+
+.info-wrapper .input-wrapper input {
+    width:100%;
+    margin-top: 5px;
+    padding: 7px;
+    border-style:solid;
+    border-width:1px;
+}
+
+.info-wrapper .input-wrapper input.error {
+border-color:red;
+background-color: rgba(255,0,0,0.2); }
+
+.info-wrapper .input-wrapper span.error {
+    color:red;
+}
+
+
+.error {
+     
+        border-color:red;
+        background-color: rgba(255,0,0,0.2); 
+}
+
+.info-wrapper .input-wrapper span.error:not(.show) {
+    display:none;
+}
+
+
+.info-wrapper button {
+    cursor:pointer;
+    padding:5px 10px;
+    margin-top:10px;
+}

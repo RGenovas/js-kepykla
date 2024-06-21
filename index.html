@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kepykla</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header class="block-wrapper logo-space">
+        <h1>Mano kepykla</h1>
+        <img class="logo" src="img/bakery-logo2-16.webp">
+    </header>
+    <div class="info-wrapper block-wrapper">
+        <h2>Pradinė informacija</h2>
+        <div class="input-wrapper">
+            <div class="tooltip">  
+       <label for="employee-count">Darbuotojų skaičius:</label>
+       <span class="tooltiptext">Numatomas darbuotojų užsakymo vykdymui skaičius</span>
+       </div>
+        <input type="number" min="0" step="1" value="0" id="employee-count">
+            <span class="error">Darbuotojų skaičius negali būti neigiamas.</span>
+        </div>
+        <div class="input-wrapper">
+       <div class="tooltip"> <label for="loaves-per-employee">Duonos kepalų per dieną (vienas darbuotojas):</label> 
+        <span class="tooltiptext"> Numatomas duononos gaminamos vieno darbuotojo per dieną kiekis</span> </div> 
+            <input type="number" min="0" step="1" value="0" id="loaves-per-employee">
+            <span class="error">Duonos negalima pasirinkti mažiau 0.</span>
+        </div>
+        <div class="input-wrapper">
+            <div class="tooltip"> <label for="order-count">Užsakymų kiekis:</label>
+                <span class="tooltiptext">Gautų užsakymų skaičius</span>      </div>
+            <input type="number" min="0" step="1" value="0" id="order-count">
+            <span class="error">Užsakymų turi būti daugiau 0</span>
+        </div>
+        <!-- Pradejau pildyti nuo cia -->
+    
+        <div class="input-wrapper">
+            <div class="tooltip">  
+            <label for="potential-price">Vieno kepalo numatoma pardavimo kaina</label>
+            <span class="tooltiptext">Kainą už kurią numatoma parduoti vieną duonos kepalą</span> </div>
+            <input type="number" min="0" step="1" value="0" id="potential-price">
+            <span class="error">Kaina turi būti didesnė už 0 </span>
+        </div> 
+        <div class="input-wrapper">
+            <div class="tooltip">
+            <label id = 'profit-label' for="potential-profit">Numatomas pelnas</label>
+            <span class="tooltiptext">Visų kepalų pardavimo atvejų gaunamos lėšos</span>      </div>
+            <input type="number" min="0" step="1" value="0" id="potential-profit" readonly>
+        </div> 
+   <!-- iki cia -->
+        <button id="calculate">Skaičiuoti</button>
+        <button id="reset">Iš naujo</button>
+    </div>
+    <div class="calc-wrapper block-wrapper">
+        <h2>Skaičiavimai</h2>
+        <div id="results">
+     
+            <p>Kol kas nieko nėra.</p>
+            <img class="img1" id="image_1" src="img/baker-cartoon-character-holding-bread-260nw-2216765189.webp">
+   
+            
+        </div>
+    </div>
+</body>
+</html>
